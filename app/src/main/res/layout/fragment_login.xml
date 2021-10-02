@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="194dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="68dp"
+        android:layout_marginBottom="585dp"
+        android:fontFamily="@font/lato_italic"
+        android:text="Login"
+        android:textAllCaps="true"
+        android:textColor="@color/gris"
+
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+    <EditText
+        android:id="@+id/usernameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:fontFamily="@font/lato_italic"
+        android:inputType="textPersonName"
+        android:text="Username"
+        android:textColor="@color/gris"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/passwordTxt"
+        android:layout_width="214dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usernameTxt" />
+
+    <Button
+        android:id="@+id/olvidoContraseñaBtn"
+        android:layout_width="106dp"
+        android:layout_height="49dp"
+        android:fontFamily="@font/lato_bold"
+        android:text="Olvido su contraseña"
+        android:textSize="9dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/azul"
+        app:layout_constraintEnd_toStartOf="@+id/loginBtn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTxt" />
+
+    <Button
+        android:id="@+id/loginBtn"
+        android:layout_width="104dp"
+        android:layout_height="49dp"
+        android:layout_marginEnd="100dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/azul"
+        android:fontFamily="@font/lato_bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordTxt" />
+
+
+
+
+
+    <Button
+        android:id="@+id/registrarBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:text="Registrar Cuenta"
+        android:fontFamily="@font/lato_bold"
+        android:backgroundTint="@color/turquesa"
+        app:layout_constraintBottom_toTopOf="@+id/sinUsuarioBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginBtn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/sinUsuarioBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="Entrar sin usuario"
+        android:backgroundTint="@color/naranja"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
